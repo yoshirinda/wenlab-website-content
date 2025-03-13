@@ -1,0 +1,43 @@
+backend:
+  name: github
+  repo: 您的GitHub用户名/lab-website-content
+  branch: main
+
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - name: "members"
+    label: "团队成员"
+    folder: "content/authors"
+    create: true
+    fields:
+      - {label: "姓名", name: "title", widget: "string"}
+      - {label: "英文姓名", name: "english_name", widget: "string"}
+      - {label: "职位", name: "role", widget: "string"}
+      - {label: "头像", name: "avatar_filename", widget: "image"}
+      - {label: "个人简介(中文)", name: "bio", widget: "text"}
+      - {label: "个人简介(英文)", name: "bio_english", widget: "text"}
+      
+  - name: "publications"
+    label: "研究成果"
+    folder: "content/publication"
+    create: true
+    fields:
+      - {label: "标题", name: "title", widget: "string"}
+      - {label: "英文标题", name: "english_title", widget: "string"}
+      - {label: "作者", name: "authors", widget: "list"}
+      - {label: "摘要(中文)", name: "abstract", widget: "text"}
+      - {label: "摘要(英文)", name: "abstract_english", widget: "text"}
+      - {label: "期刊", name: "publication", widget: "string"}
+      - {label: "发表日期", name: "date", widget: "datetime"}
+      
+  - name: "gallery"
+    label: "图片墙"
+    folder: "content/gallery"
+    create: true
+    fields:
+      - {label: "标题", name: "title", widget: "string"}
+      - {label: "英文标题", name: "english_title", widget: "string", required: false}
+      - {label: "图片", name: "image", widget: "image"}
+      - {label: "描述", name: "description", widget: "text", required: false}
