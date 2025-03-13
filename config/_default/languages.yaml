@@ -1,6 +1,65 @@
 # Languages
 #   Create a section for each of your site's languages.
 #   Documentation: https://docs.hugoblox.com/reference/language/
+zh:
+  languageCode: zh-CN
+  contentDir: content/zh
+  title: 植物分子生物学实验室
+  params:
+    description: 文启光教授实验室
+  menu:
+    main:
+      - name: 首页
+        url: '#about'
+        weight: 10
+      - name: 研究方向
+        url: '#research'
+        weight: 20
+      - name: 团队成员
+        url: '#people'
+        weight: 30
+      - name: 研究成果
+        url: '#publications'
+        weight: 40
+      - name: 图片墙
+        url: '#gallery'
+        weight: 50
+      - name: 博客
+        url: '#posts'
+        weight: 60
+      - name: 登录
+        url: '/admin/'
+        weight: 70
+
+en:
+  languageCode: en-US
+  contentDir: content/en
+  title: Plant Molecular Biology Laboratory
+  params:
+    description: Prof. Wen Qiguang's Laboratory
+  menu:
+    main:
+      - name: Home
+        url: '#about'
+        weight: 10
+      - name: Research
+        url: '#research'
+        weight: 20
+      - name: Team
+        url: '#people'
+        weight: 30
+      - name: Publications
+        url: '#publications'
+        weight: 40
+      - name: Gallery
+        url: '#gallery'
+        weight: 50
+      - name: Blog
+        url: '#posts'
+        weight: 60
+      - name: Login
+        url: '/admin/'
+        weight: 70
 
 # Default language
 en:
