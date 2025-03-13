@@ -5,9 +5,9 @@
 
 # Appearance
 appearance:
-  mode: system
-  color: emerald
-
+  theme_day: minimal
+  font: minimal
+  font_size: L
 # SEO
 marketing:
   seo:
@@ -58,3 +58,7 @@ features:
     enable: false
   privacy_pack:
     enable: false
+# 网站语言选项
+i18n:
+  defaultLocale: zh
+  availableLocales: [en, zh]
